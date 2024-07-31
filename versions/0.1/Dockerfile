@@ -8,7 +8,7 @@ WORKDIR /home
 RUN mkdir input && mkdir output
 
 # Crea los volúmenes para inputs y outputs
-VOLUME ["/home/inputs", "/home/outputs"]
+VOLUME ["/home/input", "/home/output"]
 
 RUN apt-get update && apt-get install -y curl && apt-get clean
 
